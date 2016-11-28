@@ -18,16 +18,14 @@ body {
 .wrapper {
   background: url('../img/rag.png') repeat-x;
   overflow: auto;
+  position: relative;
 }
 
 .header-container {
-  margin: 0 10px 0;
+  margin: 2em 1em 0;
   text-align: center;
-}
-
-.nav {
+  overflow: hidden;
   border-top: .5px solid black;
-  margin-top: 30px;
 }
 
 .nav ul {
@@ -37,10 +35,13 @@ body {
 }
 
 .nav li {
-  display: inline;
+  color: darkred;
+  display: inline-block;
   border-bottom: .5px solid black;
-  padding-bottom: 20px;
   font-size: 12px;
+  margin: 0 .35em 0;
+  padding-bottom: 12px;
+  width: 30%;
 }
 
 .body-container {
@@ -75,13 +76,17 @@ span {
   width: 50%;
 }
 
+#dudes {
+  display: none;
+}
+
 .footer {
   clear: both;
   text-align: center;
   margin: 0 10px 0;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 415px) {
 
   .people li {
     width: 33%;
@@ -90,8 +95,48 @@ span {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
+
+  .header-container {
+    float: left;
+    width: 35%;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+
+  .body-container {
+    width: 65%;
+    float: right;
+    margin: 8em 0 0 0;
+    padding: 0 1em;
+  }
+
+  #dudes {
+    display: inline-block;
+    position: relative;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .header-container:before {
+    content: url('../img/logo.png');
+    position: relative;
+    z-index: 1;
+    top: 190px;
+  }
+
+  .nav li {
+    width: 70%;
+  }
+
   .people li {
-    width: ;
+    width: 33%;
+  }
+
+  .quote {
+    font-size: 2em;
   }
 }
