@@ -48,28 +48,50 @@ body {
   text-align: center;
 }
 
+.people p {
+  color: darkred;
+  margin: 1em 2em;
+  font-size: 12px;
+}
+
+span {
+  font-size: 16px;
+}
+
 .people {
   list-style: none;
   overflow: auto;
-  padding: 0;
+  padding-left: 0;
 }
 
 .people img {
-  width: 174px;
+  width: 95%;
   height: auto;
-  border-radius: 10px;
-  float: left;
+  border-radius: 7px;
 }
 
 .people li {
   float: left;
-}
-
-.people li:nth-of-type(odd) {
-  margin-right: 15px;
+  width: 50%;
 }
 
 .footer {
   clear: both;
   text-align: center;
+  margin: 0 10px 0;
+}
+
+@media only screen and (min-width: 420px) {
+
+  .people li {
+    width: 33%;
+    float: left;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .people li {
+    width: ;
+  }
 }
