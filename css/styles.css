@@ -1,0 +1,75 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url('../img/bg.png');
+  background-size: cover;
+  margin: 0;
+}
+
+.wrapper {
+  background: url('../img/rag.png') repeat-x;
+  overflow: auto;
+}
+
+.header-container {
+  margin: 0 10px 0;
+  text-align: center;
+}
+
+.nav {
+  border-top: .5px solid black;
+  margin-top: 30px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.nav li {
+  display: inline;
+  border-bottom: .5px solid black;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.body-container {
+  margin: 0 10px 0;
+  text-align: center;
+}
+
+.people {
+  list-style: none;
+  overflow: auto;
+  padding: 0;
+}
+
+.people img {
+  width: 174px;
+  height: auto;
+  border-radius: 10px;
+  float: left;
+}
+
+.people li {
+  float: left;
+}
+
+.people li:nth-of-type(odd) {
+  margin-right: 15px;
+}
+
+.footer {
+  clear: both;
+  text-align: center;
+}
