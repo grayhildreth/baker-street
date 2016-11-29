@@ -112,6 +112,24 @@ span {
     padding: 0 1em;
   }
 
+  .nav li {
+    width: 55%;
+    padding: 2em 0 2em;
+  }
+ .nav li:first-of-type {
+   border-top: .5px solid black;
+ }
+  .people li {
+    width: 33%;
+  }
+
+  .quote {
+    font-size: 2em;
+  }
+}
+
+/*@media only screen and (min-width: 600px) and (max-width: 2500px) {
+
   #dudes {
     display: inline-block;
     position: relative;
@@ -127,16 +145,21 @@ span {
     z-index: 1;
     top: 190px;
   }
+}*/
 
-  .nav li {
-    width: 70%;
-  }
+@media only screen and (min-width: 1300px) {
 
   .people li {
-    width: 33%;
+    width: 16%;
   }
 
-  .quote {
-    font-size: 2em;
+  .people {
+    text-align: center;
+    padding-left: 1em;
   }
+
+  /*.nav {
+    float: right;
+  }*/
+
 }
